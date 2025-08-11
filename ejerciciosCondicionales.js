@@ -113,8 +113,165 @@ if (usuario === usuarioGuardado && contraseña === contraseñaGuardada) {
     alert("Algunos datos no fueron ingresados correctamente, intente de nuevo!")
 } */
 
+/* INTERMEDIO */
+
+// Ejercicio 1 
+
+/* let edad = parseInt(prompt("Ingresa tu edad"));
+
+switch (true) {
+    case (edad >= 0 && edad < 12):
+        alert("Eres un niño")
+        break;
+
+    case (edad >= 12 && edad < 18):
+        alert("Adolescente");
+        break;
+
+    case (edad >= 18 && edad < 50):
+        alert("Adulto!")
+        break;
+
+    case (edad >= 50):
+        alert("Adulto Mayor!!")
+        break;
+
+    default:
+        alert("Ingresa una edad valida!!")
+        break;
+} */
 
 
-// Ejercicio 11 
+
+// Ejercicio 3
+
+/* let usuarioGuardado = "Miki"
+
+let usuario = prompt("Ingresa tu usuario");
+
+let rol = prompt("Ingresa el rol (admin, editor, invitado?)");
+
+switch (true) {
+    case (usuario === usuarioGuardado && rol === "admin"):
+        alert("Acceso concedido")
+        break;
+    
+    case (usuario !== usuarioGuardado && rol === "admin"):
+        alert("Error con el usuario")
+        break;
+        
+    case (usuario === usuarioGuardado && rol !== "admin"):
+        alert("Acceso denegado, cambiar rol!")
+        break;
+        
+    default:
+        alert("Error con usuario y rol. NO SEA QL")
+        break;
+}
+ */
+
+
+// Ejercicio 4
+/* 
+let ingresos = parseInt(prompt("Ingresa tu sueldo y te digo cuanto vas a pagar de Impuestos"))
+
+let impuestos = 5;
+
+switch (true) {
+    case (ingresos < 1000 && ingresos > 0):
+        impuestos = (ingresos * (impuestos / 100))
+        document.writeln(`Tu sueldo es menor a $1000 por lo tanto tenes que pagar de impuestos $${impuestos}`)
+        break;
+
+    case (ingresos >= 1000 && ingresos < 5000):
+        impuestos = (ingresos * (impuestos / 100))
+        document.writeln(`Tu sueldo se encuentra en el rango de $1000 y $5000. Por lo tanto vas a pagar $${impuestos} de impuestos.`)    
+        break;
+
+    case (ingresos > 5000):
+        impuestos = (ingresos * (impuestos / 100))    
+        document.writeln(`Tu sueldo es superior a $5000, por lo tanto vas a pagar $${impuestos} de impuestos.`)
+        break;
+
+    default:
+        alert("Error, ingresar nuevamente.")
+        break;
+}
+ */
+
+
+// Ejercicio 5 - Conversión temperatura
+
+
+/* 
+    ingresar "C" o "F"; luego evaluar si tiene fibre o no 
+
+
+*/
+/* 
+let tipoTemperatura = prompt("La temperatura es °C o °F ?. Ingresa solo la inicial F o C..").toUpperCase();
+
+let temperatura = parseFloat(prompt("Ingresa la temperatura"));
+
+let conversion;
+
+switch (true) {
+    case (tipoTemperatura === "C" && temperatura == 36.5 || temperatura <= 37.5):
+        conversion = ((temperatura * (9 / 5)) + 32).toFixed(2); 
+        document.writeln(`Como ingresaste °C, tu temperatura es ${conversion}°F. Tienes una temperatura corporal normal!`)
+        break;
+
+    case (tipoTemperatura === "C" && temperatura > 37.5 ):
+        conversion = ((temperatura * (9 / 5)) + 32).toFixed(2);
+        document.writeln(`Como ingresaste °C, tu temperatura es ${conversion}°F. Tienes Fiebre!!, anda a un dotor chang@`)
+        break;
+
+    case (tipoTemperatura === "C" && temperatura < 36.5 ):
+        conversion = ((temperatura * (9 / 5)) + 32).toFixed(2);
+        document.writeln(`Como ingresaste °C, tu temperatura es ${conversion}°F. Tienes Hipotermia`);
+        break;
+
+    case (tipoTemperatura === "F" && temperatura == 97.7 || temperatura <= 99.5):
+        conversion = ((temperatura - 32) / (9 / 5)).toFixed(2);
+        document.writeln(`Ingresaste °F, tu temperatura es ${conversion}°C. Tienes una temperatura corporal normal.`)
+
+    case (tipoTemperatura === "F" && temperatura > 99.5):
+        conversion = ((temperatura - 32) / (9 / 5)).toFixed(2);
+        document.writeln(`Ingresaste °F, tu temperatura es ${conversion}°C. Teni fiebre chango!!`);
+
+    case (tipoTemperatura === "F" && temperatura < 97.7):
+        conversion = ((temperatura - 32) / (9 / 5)).toFixed(2);
+        document.writeln(`Ingresaste °F, tu temperatura es ${conversion}°C. Tienes hipotermia!!`);
+
+    default:
+        break;
+} 
+ */
+
+/*  VER EJERCICIO ANTERIOR */
+
+
+// EJERCICIO 6
+
+
+/* do {
+
+    let numAleatorio = Math.floor(Math.random() * 10) + 1 ;
+
+    let numUsuario = parseInt(prompt("Ingresa un número"));
+
+
+    if (numUsuario === numAleatorio) {
+    
+        alert(`FELICIDADES!!!! El numero ingresado es ${numUsuario} y el número aleatorio es ${numAleatorio}`)
+    
+    } else {
+        alert(`Segui participando! ingresado ${numUsuario} y aleatorio ${numAleatorio}`)  
+    } 
+
+} while (confirm("Intentar de nuevo?"));
+ */
+
+
 
 
