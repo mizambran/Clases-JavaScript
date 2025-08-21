@@ -208,7 +208,7 @@ switch (true) {
 
 
 */
-/* 
+ 
 let tipoTemperatura = prompt("La temperatura es °C o °F ?. Ingresa solo la inicial F o C..").toUpperCase();
 
 let temperatura = parseFloat(prompt("Ingresa la temperatura"));
@@ -234,19 +234,22 @@ switch (true) {
     case (tipoTemperatura === "F" && temperatura == 97.7 || temperatura <= 99.5):
         conversion = ((temperatura - 32) / (9 / 5)).toFixed(2);
         document.writeln(`Ingresaste °F, tu temperatura es ${conversion}°C. Tienes una temperatura corporal normal.`)
+        break;
 
     case (tipoTemperatura === "F" && temperatura > 99.5):
         conversion = ((temperatura - 32) / (9 / 5)).toFixed(2);
         document.writeln(`Ingresaste °F, tu temperatura es ${conversion}°C. Teni fiebre chango!!`);
+        break;
 
     case (tipoTemperatura === "F" && temperatura < 97.7):
         conversion = ((temperatura - 32) / (9 / 5)).toFixed(2);
         document.writeln(`Ingresaste °F, tu temperatura es ${conversion}°C. Tienes hipotermia!!`);
+        break;
 
     default:
         break;
 } 
- */
+ 
 
 /*  VER EJERCICIO ANTERIOR */
 
