@@ -1,12 +1,10 @@
-# Proyecto
+# Práctica en Javascript
 
 
 
-## Integrantes
+## Dev
 
-- Miguel
-- Angel
-- Zambrano
+- Miguel Angel Zambrano
 
 ### Deploy
 
